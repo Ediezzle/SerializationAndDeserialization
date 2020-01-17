@@ -16,8 +16,9 @@ namespace Serialization
                 ClassToSerialize c = new ClassToSerialize
                 {
                     Name = "bipin",
-                    Age = 26
-            };
+                    Age = 26,
+                    AccountNumber = "6258730521"
+                };
                 ClassToSerialize.CompanyName = "xyz";
 
                 //Create an instance of FileStream that will store serialized object
@@ -56,6 +57,7 @@ namespace Serialization
                 Console.WriteLine("Name: " + c.Name);
                 Console.WriteLine("Age: " + c.Age);
                 Console.WriteLine("Company Name: " + ClassToSerialize.CompanyName);
+                Console.WriteLine("AccountNumber: " + c.AccountNumber);
                 Console.WriteLine("Company Name: " + c.GetSupportClassString());
                 fs.Close();
             }
